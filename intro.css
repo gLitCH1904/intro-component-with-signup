@@ -118,6 +118,8 @@ body {
   font-size: 11px;
   display: none;
   color: var(--Red);
+  font-weight: 500;
+  font-style: italic;
 }
 
 .error-msg.active {
