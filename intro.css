@@ -147,7 +147,7 @@ body {
   margin-bottom: 20px;
   background-color: var(--Blue);
   font-weight: 400;
-  box-shadow: 0 7px 0 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 0 2px rgba(0, 0, 0, 0.2);
   height: 55px;
 }
 
