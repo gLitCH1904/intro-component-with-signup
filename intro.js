@@ -24,7 +24,7 @@ for (let i = 0; i < errorMsg.length; i++) {
       firstName.style.border = "2px solid hsl(0, 100%, 74%)";
     } else {
       errorMsg[0].classList.remove("active");
-      firstName.style.border = "none";
+      firstName.style.border = "1px solid hsl(246, 25%, 77%)";
     }
 
     if (lastNameValue === "") {
@@ -32,7 +32,7 @@ for (let i = 0; i < errorMsg.length; i++) {
       lastName.style.border = "2px solid hsl(0, 100%, 74%)";
     } else {
       errorMsg[1].classList.remove("active");
-      lastName.style.border = "none";
+      lastName.style.border = "1px solid hsl(246, 25%, 77%)";
     }
 
     if (emailValue === "") {
@@ -44,7 +44,7 @@ for (let i = 0; i < errorMsg.length; i++) {
       errorMsg[2].classList.add("active");
     } else {
       errorMsg[2].classList.remove("active");
-      email.style.border = "none";
+      email.style.border = "1px solid hsl(246, 25%, 77%)";
     }
 
     if (passwordValue === "") {
@@ -52,7 +52,7 @@ for (let i = 0; i < errorMsg.length; i++) {
       password.style.border = "2px solid hsl(0, 100%, 74%)";
     } else {
       errorMsg[3].classList.remove("active");
-      password.style.border = "none";
+      password.style.border = "1px solid hsl(246, 25%, 77%)";
     }
   }
 
