@@ -40,6 +40,7 @@ for (let i = 0; i < errorMsg.length; i++) {
       errorMsg[2].classList.add("active");
       email.style.border = "2px solid hsl(0, 100%, 74%)";
     } else if (!isEmail(emailValue)) {
+      email.style.border = "2px solid hsl(0, 100%, 74%)";
       errorMsg[2].textContent = "This is not a valid email";
       errorMsg[2].classList.add("active");
     } else {
