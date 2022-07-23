@@ -21,30 +21,38 @@ for (let i = 0; i < errorMsg.length; i++) {
 
     if (firstNameValue === "") {
       errorMsg[0].classList.add("active");
+      firstName.style.border = "2px solid hsl(0, 100%, 74%)";
     } else {
       errorMsg[0].classList.remove("active");
+      firstName.style.border = "none";
     }
 
     if (lastNameValue === "") {
       errorMsg[1].classList.add("active");
+      lastName.style.border = "2px solid hsl(0, 100%, 74%)";
     } else {
       errorMsg[1].classList.remove("active");
+      lastName.style.border = "none";
     }
 
     if (emailValue === "") {
       errorMsg[2].textContent = "Email cannot be empty";
       errorMsg[2].classList.add("active");
+      email.style.border = "2px solid hsl(0, 100%, 74%)";
     } else if (!isEmail(emailValue)) {
       errorMsg[2].textContent = "This is not a valid email";
       errorMsg[2].classList.add("active");
     } else {
       errorMsg[2].classList.remove("active");
+      email.style.border = "none";
     }
 
     if (passwordValue === "") {
       errorMsg[3].classList.add("active");
+      password.style.border = "2px solid hsl(0, 100%, 74%)";
     } else {
       errorMsg[3].classList.remove("active");
+      password.style.border = "none";
     }
   }
 

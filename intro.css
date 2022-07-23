@@ -236,7 +236,7 @@ body {
 
 @media screen and (max-width: 480px) {
   .container div {
-    width: 90%;
+    width: 100%;
     padding: initial;
   }
 
