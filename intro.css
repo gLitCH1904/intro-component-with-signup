@@ -1,0 +1,256 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* ### Primary */
+
+  --Red: hsl(0, 100%, 74%);
+  --Green: hsl(154, 59%, 51%);
+  --Green-1: hsl(154, 59%, 45%);
+  /* ### Accent */
+
+  --Blue: hsl(248, 32%, 49%);
+  /* ### Neutral */
+
+  --Dark-Blue: hsl(249, 10%, 26%);
+  --Grayish-Blue: hsl(246, 25%, 77%);
+  --Grayish-Blue-2: hsl(246, 25%, 90%);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  margin: auto;
+  background-color: var(--Red);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  font-family: "Poppins";
+  padding-bottom: 10px;
+}
+
+.background-1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+
+.background-2 {
+  position: absolute;
+  width: 100%;
+
+  z-index: -1;
+  display: none;
+}
+
+.container {
+  display: flex;
+  gap: 50px;
+  width: 80%;
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  align-items: center;
+}
+
+.words-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  padding: 40px;
+}
+
+.words-section h2 {
+  font-size: 2.3rem;
+  color: white;
+}
+
+.words-section p {
+  margin-top: 20px;
+  color: var(--Grayish-Blue-2);
+}
+
+.form-section {
+  width: 50%;
+}
+
+.form {
+  background-color: white;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  box-shadow: 0 7px 0 2px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.form input {
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px solid var(--Grayish-Blue);
+  height: 45px;
+  padding: 15px;
+  width: 80%;
+}
+
+.form input:focus {
+  outline: 1px solid var(--Dark-Blue);
+}
+
+.error-msg {
+  margin-left: auto;
+  margin-right: 45px;
+  margin-top: 5px;
+  font-size: 11px;
+  display: none;
+  color: var(--Red);
+}
+
+.error-msg.active {
+  display: block;
+}
+
+.form-section p {
+  margin-top: 10px;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--Grayish-Blue);
+}
+
+.form-section p span {
+  color: red;
+}
+
+.form-section button {
+  width: 100%;
+
+  border: none;
+  border-radius: 8px;
+  color: white;
+}
+
+.try-it-btn {
+  margin-bottom: 20px;
+  background-color: var(--Blue);
+  font-weight: 400;
+  box-shadow: 0 7px 0 2px rgba(0, 0, 0, 0.2);
+  height: 55px;
+}
+
+.try-it-btn p {
+  color: var(--Grayish-Blue);
+  margin: auto;
+}
+
+.try-it-btn p span {
+  color: white;
+}
+
+.trial-btn {
+  margin-top: 20px;
+  text-transform: uppercase;
+  background-color: var(--Green);
+  box-shadow: 0 2px 0 2px var(--Green-1);
+  height: 55px;
+}
+
+/* RESPONSIVENESS */
+@media screen and (max-width: 1279px) and (min-width: 768px) {
+  .container {
+    width: 100%;
+    padding: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    width: initial;
+  }
+
+  .background-1 {
+    display: none;
+  }
+
+  .background-2 {
+    display: block;
+  }
+
+  .container {
+    flex-direction: column;
+    gap: 25px;
+    width: 100%;
+    padding: 30px;
+  }
+  .container div {
+    width: 80%;
+  }
+
+  .words-section {
+    text-align: center;
+  }
+
+  .words-section h2 {
+    font-size: 1.8rem;
+  }
+
+  .form input {
+    width: 100%;
+  }
+
+  .form small {
+    margin-left: initial;
+    margin-right: initial;
+    margin-top: 5px;
+    font-size: 11px;
+  }
+
+  .form-section p {
+    text-align: center;
+  }
+
+  .try-it-btn {
+    height: 90px;
+  }
+
+  .try-it-btn p {
+    width: 70%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .container div {
+    width: 90%;
+    padding: initial;
+  }
+
+  .words-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .words-section p {
+    font-size: 12px;
+  }
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: white;
+}
